@@ -13,7 +13,7 @@
             uses: actions/checkout@v2
           - name: Build Docker Image 
             run: |
-              docker login -u ${{secrets. DOCKER_USERNAME}} -p S{{secrets. DOCKER_PASSWORD}} 
-              docker build -t saadbangashh/1200426-pythonflask
+              docker login -u ${{secrets. DOCKER_USERNAME}} -p ${{secrets. DOCKER_PASSWORD}} 
+              docker build -t saadbangashh/i200508-pythonflask .
           - name: Push Docker Image
-            run: docker push saadbangashh/1200426-pythonflask
+            run: docker push saadbangashh/i200508-pythonflask
