@@ -1,4 +1,4 @@
-name: Python application CI/CD Saad Ahmad
+    name: Python application CI/CD Saad Ahmad
     on:
       push:
         branches: [ "main" ] 
